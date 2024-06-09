@@ -1,0 +1,56 @@
+.retroButton {
+  --outline-width: 3px;
+  --shadow-width: 2px;
+
+  --button-background: #000;
+  --sec-button-background: #666666;
+  --shadow-color: #333333;
+
+  background: var(--button-background);
+  font-family: inherit;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 4px 12px;
+  text-decoration: none;
+  margin-top: 6px;
+  color: white;
+  box-shadow: inset calc(var(--shadow-width) * -1.25)
+    calc(var(--shadow-width) * -1.25) 0px 0px var(--shadow-color);
+
+  &:hover,
+  &:focus {
+    background: var(--sec-button-background);
+    box-shadow: inset calc(var(--shadow-width) * -1.5)
+      calc(var(--shadow-width) * -1.5) 0px 0px var(--shadow-color);
+  }
+
+  &:active {
+    box-shadow: inset var(--shadow-width) var(--shadow-width) 0 0
+      var(--shadow-color);
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+  }
+
+  &:before {
+    top: calc(var(--outline-width) * -1);
+    left: 0;
+    border-top: var(--outline-width) white solid;
+    border-bottom: var(--outline-width) white solid;
+  }
+
+  &:after {
+    left: calc(var(--outline-width) * -1);
+    top: 0;
+    border-left: var(--outline-width) white solid;
+    border-right: var(--outline-width) white solid;
+  }
+}

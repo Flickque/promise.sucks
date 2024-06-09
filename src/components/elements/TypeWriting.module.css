@@ -1,0 +1,29 @@
+.typewriterLine {
+  text-align: center;
+  border-right: 2px solid white;
+  overflow: hidden;
+  max-width: 280px;
+}
+
+.typewriterAnim {
+  animation:
+    typewriter 4s steps(34) 1s 1 normal both,
+    blinkTextCursor 700ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}

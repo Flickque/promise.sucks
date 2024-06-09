@@ -1,0 +1,31 @@
+:root {
+  --header-wrapper-h: 60px;
+  --header-h: 52px;
+  --container-max-w: 1440px;
+  --container-px: 16px;
+}
+
+body {
+  --w3m-z-index: 999;
+}
+
+@screen sm {
+  :root {
+    --header-wrapper-h: 68px;
+    --container-px: 40px;
+  }
+}
+
+@screen lg {
+  :root {
+    --header-wrapper-h: 64px;
+    --header-h: 56px;
+    --container-px: 48px;
+  }
+}
+
+@screen xl {
+  :root {
+    --container-px: 40px;
+  }
+}
