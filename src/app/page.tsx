@@ -13,7 +13,6 @@ export default function Home() {
       <section>
         <div className="flex flex-col gap-12 items-center justify-center">
           <AsciiPromiseArt />
-          {/*<h2 className="text-primary-xs">PROMISE. COMMIT. EARN.</h2>*/}
           <TypeWriting />
         </div>
       </section>

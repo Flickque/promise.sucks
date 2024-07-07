@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={spaceMono.className}>
-        <main className="relative flex min-h-100svh grow flex-col pt-20 md:pt-24 lg:pt-28 xl:pt-32 pb-4 has-[.modal-open]:min-h-0">
+        <main className="relative flex min-h-100svh grow flex-col pt-8 pb-4 has-[.modal-open]:min-h-0">
           {children}
         </main>
       </body>
